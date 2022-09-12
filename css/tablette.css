@@ -56,6 +56,10 @@ main{/*à inverser l'odre en vertical*/
 
 }
 
+#recherche button{
+    border-radius: 10px;
+}
+
 #recherche button i{
     visibility:visible;
     
@@ -66,11 +70,15 @@ main{/*à inverser l'odre en vertical*/
 }
 
 #recherche button i {
-    display: block;/*affichage icone*/
+    display: flex;/*affichage icone*/
+    align-items: center;
 }
 
 /*******************************/
-
+#filters h3 {
+    display: flex;
+    justify-content: flex-start;
+}
 /*************************************/
 #hebergements .images .image{
     width: 45%;
