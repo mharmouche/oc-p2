@@ -97,8 +97,12 @@ nav{
     justify-content: flex-end;
 }
 nav a{
-    color: black;
+    color:black;
     padding: 40px;
+}
+
+#lien-actif a, #lien-non-actif a:hover{
+    color:#0065FC;
 }
 
 #lien-actif, #lien-non-actif:hover{
