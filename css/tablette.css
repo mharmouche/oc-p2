@@ -1,0 +1,78 @@
+/*body {
+    background-color: yellow;
+}*/
+
+#page-global{/*global sans footer : car ruban gris occupe toute la largeur*/
+    margin-left:0%;
+    margin-right:0%;
+}
+
+/*****TRAVAIL HEADER *********/
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left:0%;
+    margin-right:0%;
+
+}
+.logo{
+    justify-content: center;
+}
+nav{
+    width: 100%;
+    justify-content: center;
+
+}
+
+nav div{
+    width: 50%;
+    justify-content: center;
+
+}
+nav div p {
+    align-items: center;
+    text-align: center;
+
+
+}
+
+
+#lien-actif{
+    border-top: none;
+    border-bottom: 2px solid#0065FC;;
+}
+
+nav div:nth-child(2){
+    border-bottom: 2px solid #F2F2F2;
+
+}
+
+/**/
+main{/*à inverser l'odre en vertical*/
+    display:flex;
+    justify-content: space-between;
+
+}
+
+#recherche button i{
+    visibility:visible;
+    
+}
+#recherche button span{
+    display: none;
+    /*visibility: hidden;*/
+}
+
+#recherche button i {
+    display: block;/*affichage icone*/
+}
+
+/*******************************/
+
+/*************************************/
+#hebergements .images .image{
+    width: 45%;
+}
+

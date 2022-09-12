@@ -1,0 +1,125 @@
+/*body {
+    background-color:rgb(127, 255, 146);
+}*/
+
+#page-global{/*global sans footer : car ruban gris occupe toute la largeur*/
+    margin-left:0%;
+    margin-right:0%;
+}
+/*           */
+
+#recherche button i{/*icon visible*/
+    visibility: visible;
+}
+#recherche button span{
+    display: none;
+}
+
+
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left:0%;
+    margin-right:0%;
+}
+ 
+
+.logo{
+    justify-content: space-between;
+}
+
+nav{
+    width: 100%;
+    justify-content: space-between;
+}
+
+nav div{
+    width: 50%;
+    justify-content: center;
+
+}
+
+nav div p {
+    align-items: center;
+    text-align: center;
+
+}
+
+
+#lien-actif{
+    border-top: none;
+    border-bottom: 2px solid#0065FC;;
+}
+
+nav div:nth-child(2){
+    border-bottom: 2px solid #F2F2F2;
+
+}
+
+/*************************************/
+#filters
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+}
+
+
+/*************************************/
+#hebergements .images .image{
+    width: 90%;
+}
+
+main{
+    flex-direction: column-reverse;
+}
+#hebergements{
+    max-width: 100%;
+
+}
+aside{
+    max-width: 100%;
+    margin-bottom: 10px;
+    padding-bottom: 30px;
+
+}
+
+
+#recherche button i {
+    display: flex;/*affichage icone*/
+    align-items: center;
+}
+
+/***********************************/
+footer
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+}
+
+
+
+/*********************************************/
+#hebergement .images{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.colonne, .colonne *{
+    max-width: 100%;
+    width: 100%;
+}
+
+.colonne img, .colonne .image a img{
+    max-width: 100%;
+    min-width: 100%;
+    min-height: 150px;
+    max-height: 150px;
+    height : 150px;
+}

@@ -1,0 +1,399 @@
+/*
+    gris : #F2F2F2
+    bleu : #0065FC
+    bleu clair : #DEEBFF
+*/
+
+/*background gris , là où il faut*/
+footer, main section, main aside{
+    background-color: #F2F2F2;
+}
+figure{
+    background-color: white;
+}
+
+/* Font Raleway  */
+*{
+    font-family: Raleway , serif;
+}
+
+/*limitation taille des images*/
+
+main img{
+    /*max-width: 200px;*/
+    max-height: 100px;
+}
+
+#activites img{
+    max-width: 100%;
+    max-height: 500px;
+}
+
+
+#hebergements{
+    max-width: 60%;
+}
+aside{
+    max-width: 30%;
+}
+
+
+/*un peu de flex*/
+#filtersBrut, #hebergements .images,#activites .images, main{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+footer, header, .filter{
+    display: flex;
+}
+
+/*header et footer*/
+ul{
+    list-style-type: none;
+    text-decoration: none;
+}
+
+a:link /*y compris les texts des images*/
+{ 
+    text-decoration:none; 
+}
+
+nav li, .filter{
+    display:inline;
+}
+
+/************fin**************/
+/***Une premiere mise en forme***/
+/********************************/
+#page-global{/*global sans footer : car ruban gris occupe toute la largeur*/
+    margin-left:4%;
+    margin-right:4%;
+    /*margin-top:4%;*/
+    display: flex;
+    flex-direction: column;
+}
+
+/*****TRAVAIL HEADER *********/
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 1%;/*logo decalé*/
+}
+
+nav{
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+}
+nav a{
+    color: black;
+}
+
+#lien-actif, #lien-non-actif:hover{
+    border-top: 2px solid#0065FC;
+}
+#lien-actif a , #lien-non-actif:hover a {
+    color: #0065FC;
+}
+
+/***** Fin TRAVAIL HEADER *********/
+
+/******Travail entete2 (recherche et filtre ) ********/
+#entete2{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 4%;
+    /*height: 220px;*/
+    justify-content: space-between;
+}
+#filters i{
+    color: #0065FC;
+    vertical-align: middle;
+    
+}
+
+#filters {
+    display: flex;
+    max-width: 70%;
+    /*justify-content: space-between;*/
+}
+.filter:hover{/*test d'idée*/
+    color : indigo;
+    background-color: rgb(88, 13, 239);
+}
+
+/*** Travail sur main et images****/
+main, .images{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/*juste pour test et visualisation*/
+/*#activites .images{
+    background-color: red;
+}*/
+/********Footer***********/
+footer{
+    padding-left: 4%; /*meme valeur 4% de #page-global pour l'alignement du text*/
+    display: flex;
+    justify-content:space-between;
+    padding-right: 20%;
+}
+footer ul{
+    padding-left: 0%;/*enlever espace gauche pour l'alignement*/
+}
+footer a{
+    color: black;
+}
+
+/********************************************/
+/*************Fin d'un premier draft***************/
+/********************************************/
+
+
+/*Header2 */
+#recherche{
+    display: flex;
+    margin-bottom: 10px;
+}
+
+#recherche  *{ /**tout les enfants : hauteur identique*/
+    height: 40px;
+    font-weight: bold;
+}
+
+
+#recherche div {/*icone location*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    	
+}
+
+#recherche div i{/*icone location*/
+    background-color: #F2F2F2;
+	border-radius: 10px 0px 0px 10px;
+	width: 50px;
+	text-align: center;
+        line-height: 30px;
+       
+
+}
+
+
+#recherche input{
+    border-style: none;
+    border-color: #F2F2F2;
+}
+
+#recherche button{
+    background-color: #0065FC;
+    color: white;
+    border-style: none;
+    border-radius: 0px 10px 10px 0px;
+    padding-right: 2%;
+}
+
+#recherche button i{
+    display: none;
+    
+}
+
+
+.filter{
+    display: flex; /*pour alignement*/
+    border-style: solid;
+    border-color: #F2F2F2;
+    border-radius: 999px;
+    max-height: 40px;
+    margin-left: 10px;
+}
+
+
+.filter div:first-child{/*div icons*/
+    background-color: #DEEBFF;
+    border-radius: 100%;
+    height: 40px;
+    width: 40px;
+    /*text-align: center;*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#filters, .filter div:nth-child(2){/*alignement vertical de label*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#filters{/*alignement vertical */
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+
+
+#info{
+    display: flex; /*pour alignement*/
+    align-items: center;
+}
+#info div:first-child{
+    border-style: solid;
+    border-color: #F2F2F2;
+    color :#0065FC;
+    border-radius: 100%;
+    font-size:smaller;
+    height: 25px;
+    width: 25px;
+    /*centrer l'icone*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*************************************************************/
+
+#hebergements{
+    padding-left: 4%;
+    border-radius: 20px;
+}
+
+#hebergements a{
+    min-width: 30%;
+}
+
+#hebergements .images{
+    justify-content: space-between;
+    padding-right: 4%;   
+}
+
+#hebergements .images .image{
+    background-color: white;
+    border-radius: 20px;
+    border-width: 4px;
+    padding: 4px;
+    margin-bottom: 4%;
+    width: 25%;
+}
+
+
+#hebergements .images .image img{
+    width: 250px;
+    width: 100%;
+    /*min-width: 250px;*/
+    height: 500px;
+    object-fit: cover;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.description{
+    padding-left: 6%;
+}
+.description{
+    color: black;
+}
+.description .note{
+    color: #0065FC;
+}
+.nom{
+    font-weight: bold;
+}
+
+.lowcost{
+    font-weight: bold;
+}
+
+#hebergements p a { /*lien afficher +*/
+    color: black;
+    font-weight: bold;
+}
+
+/*********Aside*********/
+aside{
+    padding-left: 1%;
+    border-radius: 20px;
+}
+
+aside h2{
+    display: flex;
+    justify-content: space-between;
+}
+aside .images{
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-between;
+    padding-right: 1%;   
+    padding-left: 1%;   
+}
+
+aside .images .image{
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    border-radius: 20px;
+    border-width: 4px;
+    padding: 4px;
+    margin-bottom: 4%;
+}
+
+aside .images .image img{
+    
+    width: 30%;
+    height: 100px;
+    object-fit: cover;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+aside .description{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/*******Activités**********/
+
+.colonne {
+    display: flex;
+    justify-content: space-around;
+    max-width: 24%;
+}
+.colonne:nth-child(1), .colonne:nth-child(3){
+    /*background-color: aqua;*/
+    display: flex;
+}
+.colonne:nth-child(2), .colonne:nth-child(4){
+    /*background-color:aquamarine;*/
+    display: flex;
+    flex-direction: column;
+}
+
+.colonne img{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    width: 250px;
+    height: 500px;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.colonne .petite{
+    width: 250px;
+    height: 228px;
+    object-fit: cover;
+}
+
+.colonne .description{
+    /*color: azure;*/
+    /*background-color: black;*/
+    height: 40px;
+}
+
+
+
