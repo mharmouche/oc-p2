@@ -87,6 +87,9 @@ aside{
 
 }
 
+#recherche button{
+    border-radius: 10px;
+}
 
 #recherche button i {
     display: flex;/*affichage icone*/

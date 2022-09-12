@@ -132,8 +132,8 @@ nav a{
     /*justify-content: space-between;*/
 }
 .filter:hover{/*test d'idée*/
-    color : indigo;
-    background-color: rgb(88, 13, 239);
+    color : white;
+    background-color:#0065FC;
 }
 
 /*** Travail sur main et images****/
@@ -222,7 +222,7 @@ footer a{
     border-color: #F2F2F2;
     border-radius: 999px;
     max-height: 40px;
-    margin-left: 10px;
+    margin: 5px;
 }
 
 
@@ -242,6 +242,11 @@ footer a{
     align-items: center;
     justify-content: center;
 }
+
+.filter div:nth-child(2){/*padding*/
+    padding: 10px;
+}
+
 #filters{/*alignement vertical */
     display: flex;
     align-items: center;
