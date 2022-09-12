@@ -3,6 +3,16 @@
     bleu : #0065FC
     bleu clair : #DEEBFF
 */
+body{
+    margin-top: 0px;/*Annuler la marge imposée par les navigateurs web*/
+}
+#logo img{
+    width: 110px;
+    padding-top: 10px;
+}
+nav p{
+    padding-top: 10px;
+}
 
 /*background gris , là où il faut*/
 footer, main section, main aside{
@@ -79,24 +89,22 @@ nav li, .filter{
 header{
     display: flex;
     justify-content: space-between;
-    padding-left: 1%;/*logo decalé*/
 }
 
 nav{
     width: 20%;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
 }
 nav a{
     color: black;
+    padding: 40px;
 }
 
 #lien-actif, #lien-non-actif:hover{
     border-top: 2px solid#0065FC;
 }
-#lien-actif a , #lien-non-actif:hover a {
-    color: #0065FC;
-}
+
 
 /***** Fin TRAVAIL HEADER *********/
 
