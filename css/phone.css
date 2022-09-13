@@ -67,28 +67,50 @@ nav div:nth-child(2){
 
 }
 
+#filters h3 {
+    width: 100%;
+}
+
 
 /*************************************/
 #hebergements .images .image{
-    width: 90%;
+    width: 100%;
+}
+
+#hebergements .image{
+    border-color: #F2F2F2;
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px #F2F2F2;
 }
 
 main{
     flex-direction: column-reverse;
 }
 #hebergements{
-    max-width: 100%;
-
+    width: 100%;
+    background-color: white;
 }
+
 aside{
-    max-width: 100%;
+    width: 100%;
     margin-bottom: 10px;
     padding-bottom: 30px;
-
 }
 
+
+#recherche input{
+    border: none;
+}
+#recherche {
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid #F2F2F2;
+    border-radius: 10px;
+
+}
 #recherche button{
     border-radius: 10px;
+    width: 40px;
 }
 
 #recherche button i {

@@ -157,6 +157,10 @@ footer{
 footer ul{
     padding-left: 0%;/*enlever espace gauche pour l'alignement*/
 }
+footer ul li{
+    padding-bottom: 5px;
+}
+
 footer a{
     color: black;
 }
@@ -191,15 +195,14 @@ footer a{
 	border-radius: 10px 0px 0px 10px;
 	width: 50px;
 	text-align: center;
-        line-height: 30px;
-       
-
+    line-height: 30px;
 }
-
 
 #recherche input{
     border-style: none;
     border-color: #F2F2F2;
+    border-top: 2px solid #F2F2F2;
+    border-bottom: 2px solid #F2F2F2;
 }
 
 #recherche button{
@@ -380,7 +383,14 @@ aside .description{
 }
 
 /*******Activités**********/
-
+#activites .image{
+    border-color: #F2F2F2;
+    border-width: 2px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px #F2F2F2;
+    display: flex;
+    margin-bottom: 25px;
+}
 .colonne {
     display: flex;
     justify-content: space-around;
@@ -400,15 +410,23 @@ aside .description{
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     width: 250px;
-    height: 500px;
+    height: 380px;
     object-fit: cover;
     overflow: hidden;
 }
 
 .colonne .petite{
     width: 250px;
-    height: 228px;
+    height: 150px;
     object-fit: cover;
+}
+
+.colonne .moyenne{
+    height: 200px;
+}
+
+.colonne .petite2{
+    height: 100px;
 }
 
 .colonne .description{

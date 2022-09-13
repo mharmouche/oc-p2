@@ -56,10 +56,21 @@ main{/*à inverser l'odre en vertical*/
 
 }
 
+
+#recherche input{
+    border: none;
+}
+#recherche {
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid #F2F2F2;
+    border-radius: 10px;
+
+}
 #recherche button{
     border-radius: 10px;
+    width: 40px;
 }
-
 #recherche button i{
     visibility:visible;
     
@@ -74,11 +85,21 @@ main{/*à inverser l'odre en vertical*/
     align-items: center;
 }
 
-/*******************************/
-#filters h3 {
+/*************************************/
+#filters
+{
     display: flex;
+    flex-direction: column;
     justify-content: flex-start;
+
 }
+
+#filters h3 {
+    width: 100%;
+}
+
+
+/*************************************/
 /*************************************/
 #hebergements .images .image{
     width: 45%;
