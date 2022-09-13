@@ -41,10 +41,10 @@ main img{
 
 
 #hebergements{
-    max-width: 60%;
+    width: 65%;
 }
 aside{
-    max-width: 30%;
+    width: 30%;
 }
 
 
@@ -276,7 +276,7 @@ footer a{
 /*************************************************************/
 
 #hebergements{
-    padding-left: 4%;
+    padding-left: 2%;
     border-radius: 20px;
 }
 
@@ -295,7 +295,7 @@ footer a{
     border-width: 4px;
     padding: 4px;
     margin-bottom: 4%;
-    width: 25%;
+    width: 30%;
 }
 
 
@@ -311,12 +311,17 @@ footer a{
 .description{
     padding-left: 6%;
 }
+.description *{
+    padding-bottom: 2px;
+}
 .description{
     color: black;
 }
 .description .note{
     color: #0065FC;
+    font-size: x-small;
 }
+
 .nom{
     font-weight: bold;
 }
@@ -332,7 +337,7 @@ footer a{
 
 /*********Aside*********/
 aside{
-    padding-left: 1%;
+    padding: 1%;
     border-radius: 20px;
 }
 
